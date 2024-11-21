@@ -1,0 +1,327 @@
+.header_text-style {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  background-color: white;
+  color: #000000;
+}
+.header_menu-link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: none;
+}
+
+.circle_bulet {
+  list-style-type: circle;
+}
+.no_bulet {
+  list-style-type: none;
+}
+.text_margin {
+  margin-bottom: 3px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.header_menu_navigate {
+  display: flex;
+  flex-direction: row;
+  padding: 92px 24px 96px 24px;
+}
+.navigate_box {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 44px 0px 40px 26.5px;
+}
+
+.logo-black {
+  margin-left: 38px;
+  height: 105px;
+  width: 148px;
+}
+.header_menu {
+  white-space: nowrap;
+  padding: 99px 0px 0px 165px;
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 0px; */
+}
+
+.header_menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.cover_title {
+  font-family: Raleway, serif;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.box_text_left {
+  display: flex;
+  flex-direction: row;
+  width: 316px;
+  height: 115px;
+}
+.box_text_centr {
+  padding-top: 15px;
+  padding-left: 285px;
+  display: flex;
+  flex-direction: row;
+
+  height: 100px;
+}
+.box_text_right {
+  padding-top: 35px;
+  padding-left: 583px;
+  display: flex;
+  flex-direction: row;
+  width: 417px;
+  height: 100px;
+}
+.text_left {
+  padding-left: 28px;
+  display: flex;
+  flex-direction: row;
+}
+.text_centr {
+  padding-left: 35px;
+  display: flex;
+}
+.text_right {
+  padding-left: 30px;
+  display: flex;
+}
+.cover_box {
+  color: #fff;
+  padding: 170px 50px 0px 50px;
+}
+.cover {
+  height: 757px;
+  width: 1100px;
+  background-size: 125%;
+  background-position: -140px 0px;
+  background-repeat: no-repeat;
+  background-image: url("../images/cover.jpg");
+  position: relative; 
+}
+.cover::after {
+  content: ''; /* Псевдоэлемент */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Черный с 50% прозрачностью */
+  z-index: 1; /* Помещаем поверх изображения */
+}
+.cover_footer {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  text-transform: uppercase;
+}
+.footer_box {
+  display: flex;
+  flex-direction: row;
+  padding-top: 160px;
+  padding-left: 78px;
+}
+.cover_footer_right {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  padding-left: 79px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.83px;
+}
+.cover_footer_right_border {
+  margin-top: 10px;
+  margin-left: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  height: 51px;
+  border: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  position: relative; /*добавил чтобы текст не перекрыкало темным фоном*/
+  z-index: 2;    /*(хз почему в нижней секции оно вырубает остальную часть)*/
+}
+.cover_box,
+.cover_footer
+{
+  position: relative;
+  z-index: 2; 
+}
+.lots_main_space{
+  margin: 179px 24px 0px 24px;
+  width: 1052px;
+  height: 692px;
+}
+.lots_head{
+  margin-bottom: 27px;
+  text-transform: uppercase;
+  padding:0px 891px 0px 40px;
+  font-family: Raleway,serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 46.96px;
+
+}
+.lots_cards{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px
+}
+.lots_first_card,
+.lots_second_card,
+.lots_third_card {
+  width: 334px;
+  height: 563px;
+  background-size: 165%;
+  background-repeat: no-repeat;
+  position: relative; /* Для работы псевдоэлемента */
+}
+
+.lots_first_card {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: -110px 0px;
+}
+
+.lots_second_card {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center center;
+}
+
+.lots_third_card {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center center;
+}
+
+
+.lots_first_card::after,
+.lots_second_card::after,
+.lots_third_card::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+.lots_cards_head,
+.lots_cards_text {
+  position: relative;
+  z-index: 2; 
+}
+
+.lots_cards_head{
+  color:#fff;
+padding: 51px 40px 0px 40px;
+font-family: Raleway;
+font-size: 22px;
+font-weight: 700;
+line-height: 26.4px;
+text-align: left;
+
+text-transform: uppercase;
+}
+.lots_cards_text{
+  color:#fff;
+  padding: 0px 40px 0px 40px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;  
+}
+.lots_first_card_padding{
+  padding-top: 239px;
+}
+.lots_second_card_padding{
+  padding-top: 0px;
+}
+.lots_third_card_padding{
+  padding-top: 90px;
+}
+.lots_footer{
+  font-family: Raleway;
+font-size: 20px;
+font-weight: 400;
+line-height: 23.48px;
+
+
+  padding: 30px 0px 0px 40px;
+}
+.about_box{
+  padding: 146px 24px 0px 24px;
+}
+.logo_white_circle{
+  
+  background-color:#000000;
+  width:240px;
+  height: 240px;
+
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 0px 0px 47px;  
+}
+.logo_white_text{
+  width: 150px;
+  height: 150px;
+
+}
+.about_text_box{
+  padding: 282px 0px 13px 48px;
+}
+.about_header{
+  text-transform: uppercase;
+font-family: Raleway;
+font-size: 40px;
+font-weight: 700;
+line-height: 46.96px;
+margin-bottom: 100px;
+
+}
+.about_logo_text{
+  display: flex;
+  flex-direction: row;
+}
+.about_main_text{
+font-family: Raleway;
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.01em;
+}
+.about_main_text_padding{
+  padding-top: 24px;
+}

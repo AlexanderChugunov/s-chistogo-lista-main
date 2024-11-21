@@ -2,18 +2,119 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>С чистого листа</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="content-section_theme_dark">
-        <h1>dsfsdf</h1>
-      </div>
-      <div class="content-section_theme_bright"></div>
+    <header class="header">
+      <nav class="header_menu_navigate">
+        <ul class="navigate_box">
+          <li class="header_text-style header_menu-item_active no_bulet">
+            <a class="">главная</a>
+          </li>
+          <li class="header_text-style circle_bulet">
+            <a class="header_menu-link" href="">посмотреть лоты</a>
+          </li>
+          <li class="header_text-style circle_bulet">
+            <a class="header_menu-link" href = "">об аукционе</a>
+          </li>
+        </ul>
+        <img class="logo-black" src="images/logo-black.svg" alt="logo-black" />
+      </nav>
+      <nav class="header_menu">
+        <ul calss="header_menu-list">
+          <li class="header_text-style no_bulet text_margin">
+            <a class="header_menu-link" href="">+9 999 555 5555</a>
+          </li>
+          <li class="header_text-style no_bulet text_margin">
+            <a class="header_menu-link" href="">info@sobaka.ge</a>
+          </li>
+          <li
+            class="header_text-style header_menu-item_active no_bulet text_margin"
+          >
+            <a class="">наб. Принсенграхт 263-</a>
+          </li>
+          <li
+            class="header_text-style header_menu-item_active no_bulet text_margin"
+          >
+            <a class="">265, Амстердам</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <cover>
+        <section class="cover">
+          <h1 class="cover_box">
+            <span class="box_text_left cover_title">
+              <p>он</p>
+              <p class="text_left">о</p>
+            </span>
+            <span class="box_text_centr cover_title">
+              <p>теб</p>
+              <p class="text_centr">е</p>
+            </span>
+            <span class="box_text_right cover_title">
+              <p>н</p>
+              <p class="text_right">адо</p>
+            </span>
+          </h1>
+          <footer class="footer_box">
+            <pre class="cover_footer">
+Аукцион    вещей,     в    которые    никто     не    верил</pre
+            >
+            <div class="cover_footer_right_border">Сделать ставку</div>
+            <!--<p class = "cover_footer_right ">Сделать ставку</p> -->
+          </footer>
+        </section>
+      </cover>
+      <lots>
+        <div class="lots_main_space">
+          <h1 class="lots_head">лоты</h1>
+          <ul class="lots_cards">
+            <li class="lots_first_card">
+              
+              <h1 class = "lots_cards_head"> <a href = "" class = "header_menu-link">Фильм режиссёра, который бросил киношколу </a> </h1>
+              <p class = "lots_cards_text lots_first_card_padding">
+                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+              
+            </li>
+            <li class="lots_second_card">
+              <h1 class = "lots_cards_head"> <a href = "" calss = "header_menu-link">Книга, где описан один скучный день из жизни рекламного агента </a></h1>
+              <p class = "lots_cards_text lots_second_card_padding">
+                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?              </p>
+            </li>
+            <li class="lots_third_card">
+              <h1 class = "lots_cards_head"> <a href = "" calss = "header_menu-link">Картина, которую повторит даже 5-летний сын маминой подруги </a></h1>
+              <p class = "lots_cards_text lots_third_card_padding">
+                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?              </p>
+            </li>
+
+
+          </ul>
+          <h2 class = "lots_footer"><a href="" class = "header_menu-link">посмотреть больше </a></h2>
+        </div>
+      </lots>
+      <about class = "about_logo_text"> 
+        
+        <section class="about_box">
+          <div class = "logo_white_circle">
+          <img class="logo_white_text" src="./images/logo-white.svg" alt="logo-white" />
+          </div>
+        </section>
+        <section class = "about_text_box">
+          <h1 class = "about_header">Об аукционе </h1>
+          <p class = "about_main_text ">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями? </p>
+          <p class = "about_main_text about_main_text_padding">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
+            на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        </section>
+      </about>
     </main>
     <footer></footer>
   </body>
-</html>
+</html> 
